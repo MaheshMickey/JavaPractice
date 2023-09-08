@@ -155,16 +155,17 @@ public class App {
 					break;
 				}
 			}
-			do {
 				System.out.println("Do you want to continue? (1/0)");
 				caseOption = sc.nextInt();
 				if (caseOption == 0) {
 					System.out.println("Exiting program.");
 					break;
-				} else {
-					System.out.println("Invalid input, Please enter 0 or 1");
+				}else if(caseOption == 1) {
+					continue;
 				}
-			} while (caseOption != 0 && caseOption != 1);
+				else {
+					System.out.println("Please enter valid input (1/0)");
+				}
 		}
 	}
 
