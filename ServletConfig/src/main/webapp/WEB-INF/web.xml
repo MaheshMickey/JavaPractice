@@ -1,0 +1,21 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>demo</servlet-name>
+  <servlet-class>com.test.ServletConfigDemo</servlet-class>
+  
+  <init-param>
+  <param-name>username</param-name>
+  <param-value>Accenture</param-value>
+  </init-param>
+  
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>demo</servlet-name>
+  <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+</web-app>
