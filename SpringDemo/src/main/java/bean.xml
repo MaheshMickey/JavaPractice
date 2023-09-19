@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+             http://www.springframework.org/schema/beans
+             http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="empBean" class="com.test.springdemo.bean.Employee" autowire="byName">
+<property name="empId" value="1001"></property>
+<property name="empName" value="AjayReddy"></property>
+<property name="empAddress" value="Hyderabad"></property>
+
+</bean>  
+ 
+<bean id="department" class="com.test.springdemo.bean.Department">
+<property name="deptId" value="10"></property>
+<property name="deptName" value="CSE"></property>
+</bean>  
+
+
+<!-- -Constructor Injection mechanism with property -->
+<!-- <bean id="empBean1" class="com.test.springdemo.bean.Student" scope="prototype">
+<constructor-arg name="stuId" value="1002"></constructor-arg>
+<constructor-arg name="stuName" value="Mickey"></constructor-arg>
+<constructor-arg name="stuAddress" value="Texas"></constructor-arg>
+</bean>    
+ -->
+<!-- 
+<bean id="empBean2" class="com.test.springdemo.bean.Employee">
+<constructor-arg name="empId" value="1003"></constructor-arg>
+<constructor-arg name="empName" value="Aishwarya"></constructor-arg>
+<constructor-arg name="empAddress" value="Leander"></constructor-arg>
+</bean>       --> 
+</beans>
